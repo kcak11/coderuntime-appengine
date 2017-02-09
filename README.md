@@ -1,2 +1,2 @@
 # coderuntime-appengine
-Repository for http;//coderuntime.appspot.com
+Repository for http://coderuntime.appspot.com
