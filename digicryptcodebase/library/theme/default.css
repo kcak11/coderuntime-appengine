@@ -1,0 +1,36 @@
+body{
+background-image:url("topbar.png");
+background-repeat:repeat-x;
+}
+
+textarea{
+border:1px solid #000000;
+background-color:rgb(242,121,11);
+color:#ffffff;
+font-weight:bold;
+resize:none;
+outline:none;
+overflow:auto;
+width:605px;
+}
+
+*{
+font-family:Verdana;
+}
+
+button.actButton{
+width:125px;
+border:1px solid rgb(242,121,11);
+color:rgb(242,121,11);
+background-color:#ffffff;
+font-weight:bold;
+}
+
+fieldset{
+border:2px solid rgb(242,121,11);
+}
+
+#mainTable{
+border:2px solid rgb(242,121,11);
+padding:10px;width:770px;
+}

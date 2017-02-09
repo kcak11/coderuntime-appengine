@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+<servlet>
+<servlet-name>omcoderuntime</servlet-name>
+<jsp-file>/omcode/om.jsp</jsp-file>
+</servlet>
+<servlet>
+<servlet-name>coderuntimemobile</servlet-name>
+<jsp-file>/notifications/mobile.jsp</jsp-file>
+</servlet>
+<servlet>
+<servlet-name>crbrowserupgrade</servlet-name>
+<jsp-file>/notifications/browserupgrade.jsp</jsp-file>
+</servlet>
+<servlet>
+<servlet-name>digicrypt</servlet-name>
+<jsp-file>/digicryptcodebase/digicrypt.jsp</jsp-file>
+</servlet>
+
+<!--Mappings begin here-->
+
+<servlet-mapping>
+<servlet-name>omcoderuntime</servlet-name>
+<url-pattern>/om/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+<servlet-name>omcoderuntime</servlet-name>
+<url-pattern>/OM/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+<servlet-name>omcoderuntime</servlet-name>
+<url-pattern>/Om/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+<servlet-name>omcoderuntime</servlet-name>
+<url-pattern>/oM/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+<servlet-name>coderuntimemobile</servlet-name>
+<url-pattern>/m2/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+<servlet-name>crbrowserupgrade</servlet-name>
+<url-pattern>/oldbrowser</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+<servlet-name>digicrypt</servlet-name>
+<url-pattern>/digicrypt/*</url-pattern>
+</servlet-mapping>
+<!--
+<servlet>
+<servlet-name>codearchive</servlet-name>
+<jsp-file>/appfiles/controller.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+<servlet-name>codearchive</servlet-name>
+<url-pattern>/archive/Action/*</url-pattern>
+</servlet-mapping>
+-->
+<!--
+<security-constraint> 
+        <web-resource-collection> 
+            <url-pattern>/appfiles/*</url-pattern> 
+        </web-resource-collection> 
+        <auth-constraint> 
+            <role-name>admin</role-name> 
+        </auth-constraint> 
+</security-constraint>
+-->
+</web-app>
